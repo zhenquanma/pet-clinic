@@ -2,15 +2,8 @@ package zhenquan.springframework.petclinic.services;
 
 import zhenquan.springframework.petclinic.model.Owner;
 
-import java.util.Set;
-
-public interface OwnerService {
-
-    Owner findById(Long id);
+public interface OwnerService extends CrudService<Owner, Long> {
 
     Owner findLastName(String lastName);
 
-    Set<Owner> findAll();
-
-    Owner save(Owner owner);
 }
