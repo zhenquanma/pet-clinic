@@ -19,7 +19,7 @@ public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements C
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(),   object);
+        return super.save(object.getId(), object);
     }
 
     @Override
