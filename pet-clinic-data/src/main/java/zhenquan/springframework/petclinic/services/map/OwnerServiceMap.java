@@ -1,10 +1,12 @@
 package zhenquan.springframework.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import zhenquan.springframework.petclinic.model.Owner;
 import zhenquan.springframework.petclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements OwnerService {
 
     @Override
