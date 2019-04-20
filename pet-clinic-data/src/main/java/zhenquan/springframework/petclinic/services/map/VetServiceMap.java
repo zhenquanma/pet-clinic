@@ -1,11 +1,11 @@
 package zhenquan.springframework.petclinic.services.map;
 
 import zhenquan.springframework.petclinic.model.Vet;
-import zhenquan.springframework.petclinic.services.CrudService;
+import zhenquan.springframework.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstactMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstactMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
