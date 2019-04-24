@@ -1,16 +1,16 @@
 package zhenquan.springframework.petclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import zhenquan.springframework.petclinic.model.Speciality;
-import zhenquan.springframework.petclinic.services.SpecialtiesService;
+import zhenquan.springframework.petclinic.model.Specialty;
+import zhenquan.springframework.petclinic.services.SpecialtyService;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstactMapService<Speciality, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstactMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
-    public Set<Speciality> findAll() {
+    public Set<Specialty> findAll() {
         return super.findAll();
     }
 
@@ -20,17 +20,17 @@ public class SpecialtyMapService extends AbstactMapService<Speciality, Long> imp
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(Specialty object) {
         super.delete(object);
     }
 
     @Override
-    public Speciality save(Speciality object) {
+    public Specialty save(Specialty object) {
         return super.save(object);
     }
 
     @Override
-    public Speciality findById(Long id) {
+    public Specialty findById(Long id) {
         return super.findById(id);
     }
 }
