@@ -1,10 +1,12 @@
 package zhenquan.springframework.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import zhenquan.springframework.petclinic.model.Visit;
 import zhenquan.springframework.petclinic.services.VisitService;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstactMapService<Visit, Long> implements VisitService {
 
     @Override

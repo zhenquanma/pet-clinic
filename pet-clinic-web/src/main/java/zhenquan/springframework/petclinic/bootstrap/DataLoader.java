@@ -3,10 +3,7 @@ package zhenquan.springframework.petclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import zhenquan.springframework.petclinic.model.*;
-import zhenquan.springframework.petclinic.services.OwnerService;
-import zhenquan.springframework.petclinic.services.PetTypeService;
-import zhenquan.springframework.petclinic.services.SpecialtyService;
-import zhenquan.springframework.petclinic.services.VetService;
+import zhenquan.springframework.petclinic.services.*;
 
 import java.time.LocalDate;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
 
@@ -89,6 +88,12 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(fionasCat);
 
         ownerService.save(owner2);
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasCat);
+        catVisit.setData(LocalDate.now());
+        catVisit.setDescription("Sneeze cat");
+
+        visitService.save(catVisit);
 
         System.out.println("Loaded Owners...");
 
