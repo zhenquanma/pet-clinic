@@ -9,11 +9,11 @@ import zhenquan.springframework.petclinic.services.VetService;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstactMapService<Vet, Long> implements VetService {
+public class VetMapService extends AbstactMapService<Vet, Long> implements VetService {
 
     private final SpecialtyService specialtyService;
 
-    public VetServiceMap(SpecialtyService specialtyService) {
+    public VetMapService(SpecialtyService specialtyService) {
         this.specialtyService = specialtyService;
     }
 
