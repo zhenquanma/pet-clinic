@@ -26,7 +26,7 @@ public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements O
     }
 
     @Override
-    public Owner findLastName(String lastName) {
+    public Owner findByLastName(String lastName) {
         return null;
     }
 
