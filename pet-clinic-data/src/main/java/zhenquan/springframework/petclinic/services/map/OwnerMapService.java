@@ -1,5 +1,6 @@
 package zhenquan.springframework.petclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import zhenquan.springframework.petclinic.model.Owner;
 import zhenquan.springframework.petclinic.model.Pet;
@@ -10,6 +11,7 @@ import zhenquan.springframework.petclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstactMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
@@ -38,6 +40,7 @@ public class OwnerMapService extends AbstactMapService<Owner, Long> implements O
     @Override
     public Owner save(Owner object) {
 
+        System.out.println("Implementing Map Impl......");
         if(object != null){
             if(object.getPets() != null){
                 object.getPets().forEach(pet -> {
