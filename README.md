@@ -1,6 +1,6 @@
-# Pet Clinic
-
 [![CircleCI](https://circleci.com/gh/zhenquanma/pet-clinic/tree/master.svg?style=svg)](https://circleci.com/gh/zhenquanma/pet-clinic/tree/master)
+
+# Pet Clinic
 
 This repo is build based on an online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
 
