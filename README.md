@@ -2,7 +2,7 @@
 
 # Pet Clinic
 
-This repo is build based on an online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
+This repo is adapted from an online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
 
 Contained in this repo is an opinionated version of the classic reference application - [Spring Pet Clinic](https://github.com/spring-projects/spring-petclinic).
 
