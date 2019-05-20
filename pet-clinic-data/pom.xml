@@ -10,7 +10,7 @@
     <artifactId>pet-clinic-data</artifactId>
 
 
-    <!--Only repackage data module to a thin jar-->
+    <!--Only repackage date module to a thin jar-->
     <properties>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>

@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class Visit extends BaseEntity {
 
     @Column(name = "date")
-    private LocalDate data;
+    private LocalDate date;
 
     @Column(name = "description")
     private String description;
