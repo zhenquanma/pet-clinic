@@ -1,4 +1,4 @@
-<html xmlns:th="https://www.thymeleaf.org"
+<html xmlns:th="http://www.thymeleaf.org"
       th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 
 <body>
@@ -20,11 +20,9 @@
     </thead>
     <tr>
         <td th:text="${pet.name}" /></td>
-        <td
-                th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></td>
+        <td th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></td>
         <td th:text="${pet.type}" /></td>
-        <td
-                th:text="${pet.owner?.firstName + ' ' + pet.owner?.lastName}" /></td>
+        <td th:text="${pet.owner?.firstName + ' ' + pet.owner?.lastName}" /></td>
     </tr>
 </table>
 
